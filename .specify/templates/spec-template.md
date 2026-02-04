@@ -1,61 +1,48 @@
 # Feature Specification: [FEATURE NAME]
 
 **Feature Branch**: `[###-feature-name]`  
-**Created**: [DATE]  
+**Created**: [YYYY-MM-DD]  
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
-## User Scenarios & Testing *(mandatory)*
+---
+
+## User Scenarios & Testing *(MANDATORY)*
 
 <!--
-  IMPORTANT: User stories should be PRIORITIZED as user journeys ordered by importance.
-  Each user story/journey must be INDEPENDENTLY TESTABLE - meaning if you implement just ONE of them,
-  you should still have a viable MVP (Minimum Viable Product) that delivers value.
-  
-  Assign priorities (P1, P2, P3, etc.) to each story, where P1 is the most critical.
-  Think of each story as a standalone slice of functionality that can be:
-  - Developed independently
-  - Tested independently
-  - Deployed independently
-  - Demonstrated to users independently
+IMPORTANT:
+- User stories MUST be prioritized as independent user journeys.
+- Each story must be independently developable, testable, deployable, and demo-able.
+- Implementing any single P1 story must result in a viable MVP.
+- Priorities: P1 (critical), P2 (important), P3 (nice-to-have).
 -->
 
-### User Story 1 - [Brief Title] (Priority: P1)
+### User Story 1 — [Brief Title] (Priority: P1)
 
-[Describe this user journey in plain language]
+[Describe this user journey in clear, plain language.]
 
-**Why this priority**: [Explain the value and why it has this priority level]
+**Why this priority**:  
+[Explain the value delivered and why this story is critical.]
 
-**Independent Test**: [Describe how this can be tested independently - e.g., "Can be fully tested by [specific action] and delivers [specific value]"]
+**Independent Test**:  
+[Describe how this story can be fully tested on its own and what value it proves.]
 
 **Acceptance Scenarios**:
 
-1. **Given** [initial state], **When** [action], **Then** [expected outcome]
+1. **Given** [initial state], **When** [action], **Then** [expected outcome]  
 2. **Given** [initial state], **When** [action], **Then** [expected outcome]
 
 ---
 
-### User Story 2 - [Brief Title] (Priority: P2)
+### User Story 2 — [Brief Title] (Priority: P2)
 
-[Describe this user journey in plain language]
+[Describe this user journey in plain language.]
 
-**Why this priority**: [Explain the value and why it has this priority level]
+**Why this priority**:  
+[Explain the value and why it has this priority level.]
 
-**Independent Test**: [Describe how this can be tested independently]
-
-**Acceptance Scenarios**:
-
-1. **Given** [initial state], **When** [action], **Then** [expected outcome]
-
----
-
-### User Story 3 - [Brief Title] (Priority: P3)
-
-[Describe this user journey in plain language]
-
-**Why this priority**: [Explain the value and why it has this priority level]
-
-**Independent Test**: [Describe how this can be tested independently]
+**Independent Test**:  
+[Describe how this can be tested independently.]
 
 **Acceptance Scenarios**:
 
@@ -63,53 +50,95 @@
 
 ---
 
-[Add more user stories as needed, each with an assigned priority]
+### User Story 3 — [Brief Title] (Priority: P3)
 
-### Edge Cases
+[Describe this user journey in plain language.]
+
+**Why this priority**:  
+[Explain the value and why it has this priority level.]
+
+**Independent Test**:  
+[Describe how this can be tested independently.]
+
+**Acceptance Scenarios**:
+
+1. **Given** [initial state], **When** [action], **Then** [expected outcome]
+
+---
+
+> Add additional user stories as needed.  
+> Every story MUST have a priority and an independent test definition.
+
+---
+
+## Edge Cases
 
 <!--
-  ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right edge cases.
+ACTION REQUIRED:
+Replace the placeholders below with real edge cases derived from the feature context.
 -->
 
-- What happens when [boundary condition]?
-- How does system handle [error scenario]?
+- What happens when [boundary condition is exceeded]?
+- How does the system behave when [external dependency fails]?
+- What occurs if [invalid or unexpected input] is provided?
 
-## Requirements *(mandatory)*
+---
+
+## Requirements *(MANDATORY)*
 
 <!--
-  ACTION REQUIRED: The content in this section represents placeholders.
-  Fill them out with the right functional requirements.
+ACTION REQUIRED:
+Replace all placeholder requirements with explicit, testable statements.
 -->
 
 ### Functional Requirements
 
-- **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
-- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]  
-- **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
-- **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
-- **FR-005**: System MUST [behavior, e.g., "log all security events"]
+- **FR-001**: System MUST [specific, testable capability]
+- **FR-002**: System MUST [specific validation or rule]
+- **FR-003**: Users MUST be able to [key interaction]
+- **FR-004**: System MUST [data persistence or processing requirement]
+- **FR-005**: System MUST [observable behavior or side effect]
 
-*Example of marking unclear requirements:*
+#### Handling Ambiguity (REQUIRED)
 
-- **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
-- **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
+Use `[NEEDS CLARIFICATION]` for any unknowns. Do NOT guess.
 
-### Key Entities *(include if feature involves data)*
+- **FR-006**: System MUST authenticate users via  
+  `[NEEDS CLARIFICATION: auth method not specified — email/password, SSO, OAuth?]`
+- **FR-007**: System MUST retain user data for  
+  `[NEEDS CLARIFICATION: retention period not specified]`
 
-- **[Entity 1]**: [What it represents, key attributes without implementation]
-- **[Entity 2]**: [What it represents, relationships to other entities]
+---
 
-## Success Criteria *(mandatory)*
+### Key Entities *(Include only if the feature involves data)*
+
+- **[Entity 1]**:  
+  [What it represents, key attributes, and constraints — no implementation details]
+
+- **[Entity 2]**:  
+  [What it represents and its relationship to other entities]
+
+---
+
+## Success Criteria *(MANDATORY)*
 
 <!--
-  ACTION REQUIRED: Define measurable success criteria.
-  These must be technology-agnostic and measurable.
+ACTION REQUIRED:
+Success criteria MUST be measurable, technology-agnostic, and verifiable.
 -->
 
 ### Measurable Outcomes
 
-- **SC-001**: [Measurable metric, e.g., "Users can complete account creation in under 2 minutes"]
-- **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
-- **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
-- **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+- **SC-001**: [User outcome metric — e.g., task completion time, success rate]
+- **SC-002**: [System performance metric — e.g., throughput, latency]
+- **SC-003**: [Quality or reliability metric — e.g., error rate, retries]
+- **SC-004**: [Business or operational metric — e.g., cost reduction, adoption]
+
+---
+
+## Specification Status
+
+- **Ready for Planning**: ☐ YES ☐ NO  
+- **Blocking Clarifications**: [List FR/SC IDs or NONE]  
+- **Reviewed By**: [Agent / Human]  
+- **Last Review Date**: [YYYY-MM-DD]
